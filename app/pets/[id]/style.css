@@ -1,0 +1,97 @@
+.pageContainer {
+  width: 100%;
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.petDetails {
+  width: 45rem;
+}
+.petDetails h2 {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.petProfile .helpButton {
+  background-color: rgb(161, 32, 32);
+  border-radius: 5px;
+  color: white;
+  border: 1px solid;
+  padding: 10px;
+  width: 85%;
+  margin-top: 1rem;
+}
+.petProfile .editButton {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid;
+  padding: 10px;
+  width: 85%;
+  margin-top: 0.5rem;
+}
+.navigation {
+  border-left: 1px solid;
+  width: 15rem;
+}
+
+.petInfoList li::before {
+  content: "•";
+  color: red;
+  font-size: 2rem;
+}
+
+.petInfoList li {
+  display: flex;
+  align-items: center;
+}
+.petInfoList {
+  line-height: 25px;
+}
+
+.socialMedia {
+  display: flex;
+  line-height: 2rem;
+}
+.socialMedia div:first-child {
+  width: 5remrem;
+  border-left: 1px dashed;
+}
+.socialMedia div:last-child {
+  width: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  border-left: 1px dashed;
+}
+
+.socialMedia div div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.socialMedia div div img {
+  width: 17px;
+}
+
+@media screen and (max-width: 915px) {
+    .pageContainer{
+        max-width: 600px;
+        flex-wrap: wrap; 
+    }
+    .petProfile .helpButton {
+        width: 60%;
+      }
+      .petProfile .editButton {
+        width: 60%;
+      }
+      .navigation {
+        border-left: none;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        width: 100%;
+      }
+}
