@@ -17,7 +17,7 @@ export default defineConfig({
       },
     },
     input: {
-      target: "https://pet-family-api.onrender.com/swagger/v1/swagger.json",
+      target: "./swagger.json",
     },
 
   },
